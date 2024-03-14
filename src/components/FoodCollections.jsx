@@ -17,15 +17,15 @@ function FoodCollections() {
 
     const foodCategories = [
         {pic: img1, caption: 'Pepperoni Pizza'},
-        {pic: img2, caption: 'Patato Chip'},
-        {pic: img3, caption: 'Cheese Burger'},
-        {pic: img4, caption: 'Grilled Chicken'}
+        {pic: img2, caption: 'Beef Shawarma'},
+        {pic: img3, caption: 'Grilled Chicken'},
+        {pic: img4, caption: 'Patato Chip'}
     ];
     const foodCategories2 = [
-        {pic: img5, caption: 'Grilled Chicken'},
-        {pic: img6, caption: 'Grilled Chicken'},
-        {pic: img7, caption: 'Grilled Chicken'},
-        {pic: img8, caption: 'Grilled Chicken'}
+        {pic: img5, caption: 'Cheese Burger'},
+        {pic: img6, caption: 'Chicken Biryani'},
+        {pic: img7, caption: 'Pasta'},
+        {pic: img8, caption: 'Fried Chips'}
     ]
 
     const rateFood = {
@@ -60,7 +60,7 @@ function FoodCollections() {
 
 
                         <div className="text pt-3">
-                            <span>Beef Shawarma</span>
+                            <span>{foodCategory.caption}</span>
 
                             <div className="img-rating">
                                 <img src={rateFood.fullRate} alt="Ratings" className='img-fluid'/>
@@ -87,7 +87,7 @@ function FoodCollections() {
                             <button style={{width: '10rem'}} className='btn btn-secondary mx-auto display-btn'>Add To Chart</button>
                         </div>
                         <div className="text pt-3">
-                            <span>Beef Shawarma</span>
+                            <span>{foodCategory.caption}</span>
 
                             <div className="img-rating">
                                 <img src={rateFood.fullRate} alt="Ratings" />
